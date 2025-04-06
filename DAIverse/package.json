@@ -1,0 +1,32 @@
+{
+  "name": "daiverse",
+  "version": "0.1.0",
+  "description": "Decentralized AI-Powered Knowledge & Skillverse",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network localhost",
+    "node": "hardhat node",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run node\" \"npm run deploy\" \"npm run client\""
+  },
+  "keywords": [
+    "blockchain",
+    "web3",
+    "ethereum",
+    "ai",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.22.19"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3"
+  }
+}
